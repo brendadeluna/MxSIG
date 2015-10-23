@@ -1,0 +1,190 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" />
+<title></title>
+</head>
+<body>
+    <div id="app_section">
+	<div id="app_header">
+	    <div class="container">
+		<div class="icon"></div>
+		<div class="text">Beneficiaries of social programs</div>
+	    </div>
+	</div>
+	<!--<div id="app_info"  style="display:none">-->
+	<div id="app_info" >
+	    <!-- BUSCADOR -->
+		<!--<div class="search_item"  style="display:none">-->
+	    <div class="search_item" >
+		<input id="valueSearch" type="text" placeholder="Buscar">
+		<div class="icon" onclick="busca()"></div>
+	    </div>
+	    <!-- VISUALIZADOR DEL MAPA -->
+	    <div id="mapa" ></div>
+	</div>
+	<div id="app_address">
+	    <div class="title" align="center">Address</div>
+	    <div class="content">
+		<div class="infoAddress">
+		    <div class="top">
+			<div class="left">
+			    <div class="rowl1">
+				<div class="crowl">
+				    <div class="labelOption fw" align="left">Exterior</div>
+				    <div class="fw">
+					<div class="textData d_ext" align="right"></div>
+					<div class="inputData"></div>
+				    </div>
+				</div>
+			    </div>
+			    <div class="rowl2">
+				<div class="crowl">
+				    <div class="labelOption fw" align="left">Interior</div>
+			    <div class="fw">
+				<div class="textData d_int" align="right"></div>
+				<div class="inputData"></div>
+			    </div>
+			    </div>
+			    </div>
+			    <div class="labelOption ap1">Number</div>
+			</div>
+			<div class="right">
+			    <div>
+				<div class="rowr">
+				    <div class="fw" align="left"></div>
+				    <div class="fw">
+					<div class="seg1" align="right"></div>
+					<div class="inputData"></div>
+				    </div>
+				</div>
+			    </div>
+			    <div class="labelOption ap2">Near number</div>
+			</div>
+		    </div>
+		    <div class="middle">
+			<div class="left">
+			    <div class="row1">
+				<div class="labelOption fw" align="left">Type of road</div>
+				<div class="fw">
+				    <div class="textData d_tv" align="right"></div>
+				    <div class="inputData"></div>
+				</div>
+			    </div>
+			    <div class="row2">
+				<div class="labelOption fw" align="left">Road's name</div>
+				<div class="fw">
+				    <div class="textData d_via" align="right"></div>
+				    <div class="inputData"></div>
+				</div>
+			    </div>
+			    <div class="row3">
+				<!--<div class="labelOption fw" align="left">Nombre de asentamiento humano</div>
+				<div class="fw">
+				    <div class="textData d_ase" align="right"></div>
+				    <div class="inputData"></div>
+				</div>
+			    </div>
+			    <div class="row4">
+				<div class="labelOption fw" align="left">Codigo postal</div>
+				<div clas="fw">
+				    <div class="textData d_cp" align="right"></div>
+				    <div class="inputData"></div>
+				</div>-->
+			    </div>
+			</div>
+			<div class="right">
+			    <div class="row1">
+				<div class="labelOption fw" align="left">1st intersection street name</div>
+				<div clas="fw">
+				    <div class="textData d_ev1" align="right"></div>
+				    <div class="inputData"></div>
+				</div>
+			    </div>
+			    <div class="row2">
+				<div class="labelOption fw" align="left">Type of road</div>
+				<div class="fw">
+				    <div class="textData d_tev1" align="right"></div>
+				    <div class="inputData"></div>
+				</div>
+			    </div>
+			    <div class="row3">
+				<div class="labelOption fw" align="left">2nd intersection street name</div>
+				<div class="fw">
+				    <div class="textData d_ev2" align="right"></div>
+				    <div class="inputData"></div>
+				</div>
+			    </div>
+			    <div class="row4">
+				<div class="labelOption fw" align="left">Type of road 2</div>
+				<div class="fw">
+				    <div class="textData d_tev2" align="right"></div>
+				    <div class="inputData"></div>
+				</div>
+			    </div>
+	    
+			</div>
+		    </div>
+		    <div class="bottom">
+			<div class="left">
+			    
+			    <div class="row1">
+				<div class="labelOption fw" align="left">City name</div>
+				<div class="fw">
+				    <div class="textData d_loc" align="right"></div>
+				    <div class="inputData"></div>
+				</div>
+			    </div>
+			    <div class="row2">
+				<div class="labelOption fw" align="left">City's code</div>
+				<div class="fw">
+				    <div class="textData d_cve_loc" align="right"></div>
+				    <div class="inputData"></div>
+				</div>
+			    </div>
+			    <div class="row3">
+				<div class="labelOption fw" align="left">Municipality </div>
+				<div class="fw">
+				    <div class="textData d_mun" align="right"></div>
+				    <div class="inputData"></div>
+				</div>
+			    </div>
+			    <div class="row4">
+				<div class="labelOption fw" align="left">Municipality's code</div>
+				<div class="fw">
+				    <div class="textData d_cve_mun" align="right"></div>
+				    <div class="inputData"></div>
+				</div>
+			    </div>
+			    
+			    <div class="row5">
+				<div class="labelOption fw" align="left">State</div>
+				<div class="fw">
+				    <div class="textData d_ent" align="right"></div>
+				    <div class="inputData"></div>
+				</div>
+			    </div>
+			    
+			    <div class="row6">
+				<div class="labelOption fw" align="left">State's code</div>
+				<div class="fw">
+				    <div class="textData d_cve_ent" align="right"></div>
+				    <div class="inputData"></div>
+				</div>
+			    </div>
+			    
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+    <div id="app_data"></div>
+</body>
+<!-- LLAMADO A SCRIPT PARA AGREGAR FUNCIONALIDAD -->
+<script type="text/javascript" src="js/script.js"></script>
+<!-- LLAMADO DEL API PARA GENERAR NUEVO PROYECTO -->
+<script src="http://gaia.inegi.org.mx/mdm-api/api?key=mdmkci3mUDKCUkBfMnQXTxS1KdoWdwUH9GtJ83SZuiXUuU" type="text/javascript"></script>
+</html>
+
+
